@@ -24,9 +24,17 @@ public class SecretMessageBox {
 		String message = JOptionPane.showInputDialog(null, "Enter a secret message");
 		String answer = JOptionPane.showInputDialog(null, "Enter the passcode to see the secret message");
 		
-	if (message == password) {
+	if (answer.equals(password)) {
 		
+		JOptionPane.showMessageDialog(null, message);
 		
+	}
+		
+			else {
+		
+				JOptionPane.showMessageDialog(null, "Intruder");
+				
+		}
 	}
 	
 	// 1. Set a password in a String variable
